@@ -260,6 +260,14 @@ namespace SamSV
 			this.pictureBox.Refresh();
 		}
 
+		private void renderSelectedButton_Click(object sender, EventArgs e)
+		{
+			CardCreator.isDraftRun = false;
+			Card card = this.selectCardByTitle(this.listView.SelectedItems[0].Text);
+			card.Render();
+			this.UpdatePreview(card);
+		}
+
 
 
 		

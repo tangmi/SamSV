@@ -50,6 +50,7 @@
 			this.cardArtLocation = new System.Windows.Forms.Label();
 			this.cardArtLocationLabel = new System.Windows.Forms.Label();
 			this.renderButton = new System.Windows.Forms.Button();
+			this.renderSelectedButton = new System.Windows.Forms.Button();
 			this.statusStrip.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.cardHeat)).BeginInit();
@@ -256,11 +257,22 @@
 			this.renderButton.UseVisualStyleBackColor = true;
 			this.renderButton.Click += new System.EventHandler(this.renderButton_Click);
 			// 
+			// renderSelectedButton
+			// 
+			this.renderSelectedButton.Location = new System.Drawing.Point(601, 514);
+			this.renderSelectedButton.Name = "renderSelectedButton";
+			this.renderSelectedButton.Size = new System.Drawing.Size(121, 43);
+			this.renderSelectedButton.TabIndex = 19;
+			this.renderSelectedButton.Text = "Render Selected";
+			this.renderSelectedButton.UseVisualStyleBackColor = true;
+			this.renderSelectedButton.Click += new System.EventHandler(this.renderSelectedButton_Click);
+			// 
 			// MainWindow
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1016, 715);
+			this.Controls.Add(this.renderSelectedButton);
 			this.Controls.Add(this.renderButton);
 			this.Controls.Add(this.cardBox);
 			this.Controls.Add(this.listView);
@@ -307,6 +319,7 @@
 		private System.Windows.Forms.Label cardArtLocation;
 		private System.Windows.Forms.Label cardArtLocationLabel;
 		private System.Windows.Forms.Button renderButton;
+		private System.Windows.Forms.Button renderSelectedButton;
     }
 }
 
