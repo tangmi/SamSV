@@ -4,4 +4,4 @@ This is a card templating program for my friend, Sam Warner's, card game, A Stra
 
 ## Notes
 
-Requires the (Magick.net)[http://magick.codeplex.com/] DLL and assumes the x86 version is in `.\SamSV\bin`.
+Requires the [Magick.net](http://magick.codeplex.com/) DLL and assumes the x86 version is in `.\SamSV\bin`.
