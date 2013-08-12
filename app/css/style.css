@@ -6,3 +6,101 @@ body {
 a {
 	color: #00B7FF;
 }
+
+.card-list {
+
+}
+.card-list-item {
+	vertical-align: top;
+
+}
+.card-list-cell {
+	padding: 0.2em 0.5em;
+}
+.card-list-item-preview img {
+	max-width: 100px;
+}
+.card-list-item-info {
+	min-width: 500px;
+}
+.card-list-item-info h3, .card-list-item-info p {
+	margin: 0.3em 0 0;
+}
+.card-list-item-info span.field {
+	font-weight: bold;
+}
+.card-description {
+	font-style: oblique;
+}
+.card-description:before {
+	content: '\201C ';
+}
+.card-description:after {
+	content: '\201D ';
+}
+
+
+.card-list-item-modified {
+
+}
+.card-list-item-links {
+
+}
+
+.card-preview {
+	position: relative;
+	display:inline-block;
+	float: left;
+}
+.card-preview img {
+	transition: opacity 0.05s;
+}
+.card-preview img.rerendering {
+	opacity: 0.2;
+}
+.card-preview img + .loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -18px;
+	margin-left: -18px;
+	background-color: white;
+	padding: 10px;
+}
+
+.card-edit {
+	float: left;
+	padding-left: 2em;
+}
+.card-edit-field {
+	margin-bottom: 0.5em;
+}
+.card-edit-field * {
+	vertical-align: top;
+}
+.card-edit-label {
+	width: 100px;
+	display: inline-block;
+	margin-top: 0.75em;
+}
+.card-edit-input {
+	width: 250px;
+	display: inline-block;
+}
+.card-edit-input input:not([type=submit]), .card-edit-input textarea {
+	border: 1px solid lightgray;
+	padding: 0.5em;
+}
+.card-edit-input input.card-sbuck {
+	background-color: #D2EED2;
+}
+.card-edit-input input.card-heat {
+	background-color: #EEDCD2;
+}
+.card-edit-input textarea {
+	height: 6em;
+}
+
+thead {
+	font-weight: bold;
+}

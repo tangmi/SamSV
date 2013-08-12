@@ -93,12 +93,16 @@ module.exports.update = function(req, res) {
 
 module.exports.render = function(req, res) {
 	render.render(req, res, function(data) {
-		var response = {
-			"status": "success",
-			"message": "rendered card",
-			"response": data
-		};
-		res.send(response);
+		getCardInfo(data.name, function(info) {
+			info.elapsed = data.elapsed;
+
+			var response = {
+				"status": "success",
+				"message": "rendered card",
+				"response": info
+			};
+			res.send(response);
+		});
 	});
 };
 
@@ -117,29 +121,38 @@ function getCardInfo(cardname, callback) {
 		fs.openSync(infopath, 'w');
 
 		var defaults = {
-			"title": "",
-			"type": "",
-			"description": "",
-			"sbuck": "",
-			"heat": ""
+			"title": cardname,
+			"type": "type",
+			"description": "description",
+			"sbuck": "0",
+			"heat": "0"
 		};
 
 		fs.writeFileSync(infopath, JSON.stringify(defaults, null, 2));
 	}
 
+	var artstat = -1;
+	var renderstat = -1;
+	var infostat = -1;
+	try {
+		artstat = fs.statSync(path.join(dirsrc, cardname + '.psd')).mtime;
+	} catch (e) {}
+	try {
+		renderstat = fs.statSync(path.join(dirout, cardname + '.tif')).mtime;
+	} catch (e) {}
+	try {
+		infostat = fs.statSync(path.join(dirsrc, cardname + '.json')).mtime;
+	} catch (e) {}
+
 	fs.readFile(infopath, function(err, data) {
 		var cardinfo = JSON.parse(data);
-
-		var artstat = fs.statSync(path.join(dirsrc, cardname + '.psd'));
-		var renderstat = fs.statSync(path.join(dirout, cardname + '.tif'));
-		var infostat = fs.statSync(path.join(dirsrc, cardname + '.json'));
 
 		callback({
 			"name": cardname,
 			"thumbnail": "/img/thumbs/" + cardname + "_thumb.png",
-			"artmodified": artstat.mtime,
-			"lastrendered": renderstat.mtime,
-			"infomodified": infostat.mtime,
+			"artmodified": artstat,
+			"lastrendered": renderstat,
+			"infomodified": infostat,
 			"cardinfo": cardinfo
 		});
 

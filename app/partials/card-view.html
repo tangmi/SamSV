@@ -1,16 +1,52 @@
-{{card}}
+<a href="#/">Back to list</a>
 
-<h1>{{card.cardinfo.title}}</h1>
+<h1>{{card.name}}.psd</h1>
 
-<img ng-src="{{card.thumbnail}}" alt="">
+<div class="card-preview">
+	<img ng-src="{{card.thumbnail}}" ng-class="{'rerendering': card.rendering}">
+	<img src="/img/loader.gif" class="loader" ng-show="card.rendering">
+</div>
 
-<h2>{{card.cardinfo.type}}</h2>
+<div class="card-edit">
+	<div class="card-edit-field">
+		<div class="card-edit-label">Title</div>
+		<div class="card-edit-input">
+		<input class="card-title" type="text" ng-model="card.cardinfo.title">
+		</div>
+	</div>
+	<div class="card-edit-field">
+		<div class="card-edit-label">Type</div>
+		<div class="card-edit-input">
+		<input class="card-type" type="text" ng-model="card.cardinfo.type">
+		</div>
+	</div>
+	<div class="card-edit-field">
+		<div class="card-edit-label">Cost</div>
+		<div class="card-edit-input">
+		<input class="card-sbuck" type="text" ng-model="card.cardinfo.sbuck">
+		</div>
+	</div>
+	<div class="card-edit-field">
+		<div class="card-edit-label">Heat</div>
+		<div class="card-edit-input">
+		<input class="card-heat" type="text" ng-model="card.cardinfo.heat">
+		</div>
+	</div>
+	<div class="card-edit-field">
+		<div class="card-edit-label">Description</div>
+		<div class="card-edit-input">
+		<textarea class="card-description" ng-model="card.cardinfo.description"></textarea>
+		</div>
+	</div>
+	<div class="card-edit-field">
+		<div class="card-edit-label"></div>
+		<div class="card-edit-input">
+			<input type="submit" value="Update card" ng-click="update(card)">
+		</div>
+	</div>
 
-<p>cost: {{card.cardinfo.sbuck}}</p>
-<p>heat: {{card.cardinfo.heat}}</p>
 
-<p>{{card.cardinfo.description}}</p>
-
-<p>art modified: {{card.artmodified}}</p>
-<p>text modified: {{card.infomodified}}</p>
-<p>rendered: {{card.lastrendered}}</p>
+	<p>art modified: {{card.artmodified | formatDate}}</p>
+	<p>text modified: {{card.infomodified | formatDate}}</p>
+	<p>rendered: {{card.lastrendered | formatDate}}</p>
+</div>

@@ -1,7 +1,7 @@
 'use strict';
 
 
-angular.module('ssv', ['ssvServices']).
+angular.module('ssv', ['ssvServices', 'ssvFilters']).
 config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider.when('/', {

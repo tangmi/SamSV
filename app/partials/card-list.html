@@ -1,41 +1,49 @@
 
+<label for="input-search">Search:</label>
+<input id="input-search" type="text" ng-model="search">
 
-<select ng-model="predicate">
-	<option value="cardinfo.title">title</option>
-	<option value="cardinfo.type">type</option>
-	<option value="cardinfo.cost">cost</option>
-	<option value="cardinfo.heat">heat</option>
-	<option value="artmodified">art modify time</option>
-	<option value="infomodified">text modify time</option>
-	<option value="lastrendered">render modify time</option>
+<label for="select-sort">Sort by:</label>
+<select id="select-sort" ng-model="predicate">
+	<option value="cardinfo.title" ng-selected>Title</option>
+	<option value="cardinfo.type">Type</option>
+	<option value="cardinfo.cost">Cost</option>
+	<option value="cardinfo.heat">Heat</option>
+	<option value="artmodified">Art modify time</option>
+	<option value="infomodified">Text modify time</option>
+	<option value="lastrendered">Last render time</option>
 </select>
 
 <input type="checkbox" id="reverse-checkbox" ng-model="reverse"> <label for="reverse-checkbox"> reverse?</label>
 
-<table>
+<table class="card-list">
 	<thead>
 		<tr>
-			<td>preview</td>
-			<td>description</td>
-			<td>modified</td>
+			<td>Preview</td>
+			<td>Description</td>
+			<td>Modified</td>
 		</tr>
 	</thead>
 	<tbody>
-		<tr ng-repeat="card in cards | orderBy:predicate:reverse">
-			<td><img ng-src="{{card.thumbnail}}"></td>
-			<td>
-				<b>{{card.cardinfo.title}}</b><br>
-				type: {{card.cardinfo.type}}<br>
-				description: {{card.cardinfo.description}}<br>
-				cost: {{card.cardinfo.sbuck}}<br>
-				heat: {{card.cardinfo.heat}}<br>
+		<tr ng-repeat="card in cards | orderBy:predicate:reverse | filter:search" class="card-list-item">
+
+			<td class="card-list-item-preview card-list-cell card-preview">
+				<a href="#/card/{{card.name}}">
+					<img ng-src="{{card.thumbnail}}" ng-class="{'rerendering': card.rendering}">
+					<img src="/img/loader.gif" class="loader" ng-show="card.rendering">
+				</a>
 			</td>
-			<td>
-				Art: {{card.artmodified | date:'medium'}} <br>
-				Text: {{card.infomodified | date:'medium'}} <br>
-				Render: {{card.lastrendered | date:'medium'}}
+			<td class="card-list-item-info card-list-cell">
+				<h3 class="card-title"><a href="#/card/{{card.name}}">{{card.cardinfo.title}}</a></h3>
+				<p class="card-type"><span class="field">Type:</span> {{card.cardinfo.type}}</p>
+				<p class="card-sbuck"><span class="field">Cost:</span> {{card.cardinfo.sbuck}}</p>
+				<p class="card-heat"><span class="field">Heat:</span> {{card.cardinfo.heat}}</p>
+				<p class="card-description">{{card.cardinfo.description}}</p>
 			</td>
-			<td><a href="#/card/{{card.name}}">details</a></td>
+			<td class="card-list-item-modified card-list-cell">
+				Art: {{card.artmodified | formatDate}} <br>
+				Text: {{card.infomodified | formatDate}} <br>
+				Render: {{card.lastrendered | formatDate}}
+			</td>
 		</tr>
 	</tbody>
 </table>
