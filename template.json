@@ -8,30 +8,40 @@
 			"h": 1537
 		},
 		"title": {
+			"font": "Fh_Space",
 			"x": 168,
 			"y": 160,
 			"w": 2154,
 			"h": 189
 		},
 		"type": {
+			"font": "Fh_Space",
 			"x": 220,
 			"y": 1980,
 			"w": 2074,
 			"h": 160
 		},
 		"description": {
+			"font": "Fh_Space",
+			"type": "caption",
 			"x": 205,
 			"y": 2187,
 			"w": 2101,
 			"h": 662
 		},
 		"sbuck": {
+			"font": "Spacebit",
+			"color": "white",
+			"alignment": "center",
 			"x": 135,
 			"y": 2864,
 			"w": 360,
 			"h": 360
 		},
 		"heat": {
+			"font": "Spacebit",
+			"color": "white",
+			"alignment": "center",
 			"x": 2005,
 			"y": 2864,
 			"w": 360,

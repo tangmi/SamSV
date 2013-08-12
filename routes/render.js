@@ -16,6 +16,7 @@ var dirs = config.dirs;
 var dirsrc = path.resolve(dirs.src);
 var dirtmp = path.resolve(dirs.tmp);
 var dirout = path.resolve(dirs.out);
+var dirthumbs = path.resolve(dirs.thumbs);
 
 var templatepath = '';
 
@@ -33,7 +34,6 @@ exports.init = function() {
 				async.parallel([
 					function(callback) {
 						//make the output directory if it doesn't exist
-						logger.info('output folder...')
 						fs.stat(dirout, function(err, stats2) {
 							if (!stats2) {
 								fs.mkdirSync(dirout);
@@ -43,7 +43,6 @@ exports.init = function() {
 					},
 					function(callback) {
 						//make the output directory if it doesn't exist
-						logger.info('temp folder...')
 						fs.stat(dirtmp, function(err, stats2) {
 							if (!stats2) {
 								fs.mkdirSync(dirtmp);
@@ -52,15 +51,17 @@ exports.init = function() {
 						});
 					}
 				], function() {
-					logger.info('folders made.');
 					done();
 				})
 			},
 			function(done) {
 				//cache the template
+				logger.info('Caching template...');
 				renderTemplate(done);
 			}
-		]);
+		], function() {
+			logger.info('Initialization done!');
+		});
 
 	});
 };
@@ -86,19 +87,20 @@ exports.index = function(req, res) {
 			try {
 				fs.unlinkSync(fileout);
 			} catch (e) {};
-			// try {
-			// 	fs.openSync(fileout, 'w');
-			// } catch (e) {};
 
 			composite(templatepath)
 				.art(filetmp)
-				.title('hello world')
+				.text('title', 'sam warner')
+				.text('type', 'human')
+				.text('description', 'this is a description this is a description this is a description this is a description this is a description this is a description this is a description this is a description this is a description this is a description ')
+				.text('sbuck', 5)
+				.text('heat', 0)
 				.build(fileout, function() {
-					done();
+					renderThumbnail(cardname, done);
 				});
-
 		}
 	], function() {
+		logger.info('Finished building ' + cardname + '!');
 		res.send(200);
 	});
 };
@@ -108,11 +110,32 @@ function renderTemplate(done) {
 	psdToPng(require('../template.json').name, done);
 }
 
+function renderThumbnail(resourcename, callback) {
+	var resourcein = path.join(dirout, resourcename + '.tif');
+	var thumbnail = path.join(dirthumbs, resourcename + '_thumb.png');
+
+	try {
+		fs.unlinkSync(thumbnail);
+	} catch (e) {};
+
+	im.convert([
+		resourcein,
+		'-resize', '250x250',
+		thumbnail
+	], function(err, stdout) {
+		logger.info('Created thumbnail of card', resourcename);
+		callback();
+	});
+}
+
 function psdToPng(resourcename, callback) {
 	var resourcein = path.join(dirsrc, resourcename + '.psd');
 	var resourcetmp = path.join(dirtmp, resourcename + '.tif');
-	im.convert([resourcein + '[0]', resourcetmp], function(err, stdout) {
-		logger.info(resourcename + '.psd', 'cached to', resourcetmp);
+	im.convert([
+		resourcein + '[0]',
+		resourcetmp
+	], function(err, stdout) {
+		logger.info(resourcename + '.psd', 'rendered to', resourcetmp);
 		callback();
 	});
 }

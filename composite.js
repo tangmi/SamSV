@@ -40,17 +40,20 @@ module.exports = (function() {
 	};
 
 	compositeConstructor.prototype._addText = function(text, options) {
-		var font = 'Arial';
+		text = text.toString();
+
+		var font = options.font;
 
 		var size = options.w + 'x' + options.h;
 		var geometry = options.w + 'x' + options.h + '+' + options.x + '+' + options.y;
 		var added = [
+			'-gravity', options.alignment, //sets the alignment of the text
+			'-background', 'none',
 			'-font', font,
-			'-fill', 'blue',
+			'-fill', options.color,
 			'-size', size,
-			'-gravity', 'West',
-			'caption:' + text,
-			// 'label:' + text,
+			options.type + ':' + text,
+			'-gravity', 'Northwest', //resets the alignment so -geometry will work from the top-left
 			'-geometry', geometry,
 			'-composite'
 		];
@@ -61,17 +64,27 @@ module.exports = (function() {
 		return this;
 	};
 
-	compositeConstructor.prototype.title = function(text) {
-		return this._addText(text, {
-			x: geo.title.x,
-			y: geo.title.y,
-			w: geo.title.w,
-			h: geo.title.h
-		});
-	}
+	compositeConstructor.prototype.text = function(textType, text) {
+		if (!geo[textType]) {
+			logger.error('Text type', '"' + textType + '"', 'doesn\'t exist!');
+			return this;
+		} else {
+			return this._addText(text, {
+				font: geo[textType].font || 'Arial',
+				type: geo[textType].type || 'label',
+				alignment: geo[textType].alignment || 'Northwest',
+				color: geo[textType].color || 'black',
+				x: geo[textType].x,
+				y: geo[textType].y,
+				w: geo[textType].w,
+				h: geo[textType].h
+			});
+		}
+	};
 
 	compositeConstructor.prototype.build = function(output, callback) {
 		this.params[this.params.length] = output;
+		logger.info('Rendering composite...');
 
 		var _this = this;
 		im.convert(this.params, function(err, stdout) {
