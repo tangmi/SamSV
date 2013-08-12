@@ -1,5 +1,4 @@
 {
-	"template": "CardFront",
 	"dirs": {
 		"src": "img/src",
 		"tmp": "img/tmp",

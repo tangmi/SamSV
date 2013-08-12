@@ -91,7 +91,8 @@ exports.index = function(req, res) {
 			// } catch (e) {};
 
 			composite(templatepath)
-				.add(filetmp, 0, 0, 500, 500)
+				.art(filetmp)
+				.title('hello world')
 				.build(fileout, function() {
 					done();
 				});
@@ -103,8 +104,8 @@ exports.index = function(req, res) {
 };
 
 function renderTemplate(done) {
-	templatepath = path.join(dirtmp, config.template + '.tif');
-	psdToPng(config.template, done);
+	templatepath = path.join(dirtmp, require('../template.json').name + '.tif');
+	psdToPng(require('../template.json').name, done);
 }
 
 function psdToPng(resourcename, callback) {
