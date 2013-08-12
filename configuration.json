@@ -3,6 +3,6 @@
 		"src": "img/src",
 		"tmp": "img/tmp",
 		"out": "img/out",
-		"thumbs": "app/img"
+		"thumbs": "app/img/thumbs"
 	}
 }
