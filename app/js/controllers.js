@@ -26,6 +26,9 @@ function SuperCtrl($scope, $rootScope, Cards) {
 }
 
 function CardListCtrl($scope, Cards) {
+
+	$scope.predicate = 'cardinfo.title';
+	
 	$scope.cards = [];
 
 	Cards.query(function(data) {
