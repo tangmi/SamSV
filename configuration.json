@@ -1,4 +1,5 @@
 {
+	"thumbnailsize": "128x128",
 	"dirs": {
 		"src": "img/src",
 		"tmp": "img/tmp",

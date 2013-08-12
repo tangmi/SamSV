@@ -20,7 +20,7 @@ var dirthumbs = path.resolve(dirs.thumbs);
 
 var templatepath = '';
 
-exports.init = function() {
+module.exports.init = function() {
 	fs.stat(dirsrc, function(err, stats) {
 		if (!stats) {
 			logger.info('Source directory doesn\'t exist! (' + dirsrc + ')');
@@ -66,14 +66,18 @@ exports.init = function() {
 	});
 };
 
-exports.renderTemplate = function(req, res) {
+module.exports.renderTemplate = function(req, res) {
 	renderTemplate(function() {});
 };
 
-exports.index = function(req, res) {
+module.exports.render = function(req, res, callback) {
 	var cardname = req.params.name;
 
 	logger.info('Render card:', cardname);
+
+	var stime = +new Date,
+		etime,
+		dtime;
 
 	async.series([
 		function(done) {
@@ -88,20 +92,35 @@ exports.index = function(req, res) {
 				fs.unlinkSync(fileout);
 			} catch (e) {};
 
-			composite(templatepath)
-				.art(filetmp)
-				.text('title', 'sam warner')
-				.text('type', 'human')
-				.text('description', 'this is a description this is a description this is a description this is a description this is a description this is a description this is a description this is a description this is a description this is a description ')
-				.text('sbuck', 5)
-				.text('heat', 0)
-				.build(fileout, function() {
-					renderThumbnail(cardname, done);
-				});
+			var infopath = path.join(dirsrc, cardname + '.json');
+			fs.readFile(infopath, function(err, data) {
+				var cardinfo = JSON.parse(data);
+
+				composite(templatepath)
+					.art(filetmp)
+					.text('title', cardinfo.title)
+					.text('type', cardinfo.type)
+					.text('description', cardinfo.description)
+					.text('sbuck', cardinfo.sbuck)
+					.text('heat', cardinfo.heat)
+					.build(fileout, function() {
+						//clean temp file
+						try {
+							fs.unlinkSync(filetmp);
+						} catch (e) {};
+
+						renderThumbnail(cardname, done);
+					});
+			});
 		}
 	], function() {
 		logger.info('Finished building ' + cardname + '!');
-		res.send(200);
+		etime = +new Date;
+		dtime = etime - stime;
+		callback({
+			"name": cardname,
+			"elapsed": dtime
+		});
 	});
 };
 
@@ -120,7 +139,7 @@ function renderThumbnail(resourcename, callback) {
 
 	im.convert([
 		resourcein,
-		'-resize', '250x250',
+		'-resize', config.thumbnailsize,
 		thumbnail
 	], function(err, stdout) {
 		logger.info('Created thumbnail of card', resourcename);
@@ -139,3 +158,5 @@ function psdToPng(resourcename, callback) {
 		callback();
 	});
 }
+
+module.exports.init();

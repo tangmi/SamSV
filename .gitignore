@@ -4,5 +4,6 @@ node_modules/
 img/tmp/
 img/out/
 img/src/*.psd
+img/src/*.json
 
 app/img/thumbs/

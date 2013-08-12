@@ -1,0 +1,41 @@
+
+
+<select ng-model="predicate">
+	<option value="cardinfo.title">title</option>
+	<option value="cardinfo.type">type</option>
+	<option value="cardinfo.cost">cost</option>
+	<option value="cardinfo.heat">heat</option>
+	<option value="artmodified">art modify time</option>
+	<option value="infomodified">text modify time</option>
+	<option value="lastrendered">render modify time</option>
+</select>
+
+<input type="checkbox" id="reverse-checkbox" ng-model="reverse"> <label for="reverse-checkbox"> reverse?</label>
+
+<table>
+	<thead>
+		<tr>
+			<td>preview</td>
+			<td>description</td>
+			<td>modified</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="card in cards | orderBy:predicate:reverse">
+			<td><img ng-src="{{card.thumbnail}}"></td>
+			<td>
+				<b>{{card.cardinfo.title}}</b><br>
+				type: {{card.cardinfo.type}}<br>
+				description: {{card.cardinfo.description}}<br>
+				cost: {{card.cardinfo.sbuck}}<br>
+				heat: {{card.cardinfo.heat}}<br>
+			</td>
+			<td>
+				Art: {{card.artmodified | date:'medium'}} <br>
+				Text: {{card.infomodified | date:'medium'}} <br>
+				Render: {{card.lastrendered | date:'medium'}}
+			</td>
+			<td><a href="#/card/{{card.name}}">details</a></td>
+		</tr>
+	</tbody>
+</table>
