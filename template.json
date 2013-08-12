@@ -1,51 +1,51 @@
 {
-	"name": "CardFront",
+	"name": "template",
 	"geometry": {
 		"art": {
-			"x": 196,
-			"y": 412,
-			"w": 2100,
-			"h": 1537
+			"x": 210,
+			"y": 417,
+			"w": 2088,
+			"h": 1526
 		},
 		"title": {
 			"font": "Fh_Space",
-			"x": 168,
-			"y": 160,
-			"w": 2154,
-			"h": 189
+			"x": 166,
+			"y": 155,
+			"w": 2168,
+			"h": 198
 		},
 		"type": {
 			"font": "Fh_Space",
-			"x": 220,
-			"y": 1980,
-			"w": 2074,
-			"h": 160
+			"x": 207,
+			"y": 1971,
+			"w": 2090,
+			"h": 172
 		},
 		"description": {
 			"font": "Fh_Space",
 			"type": "caption",
-			"x": 205,
-			"y": 2187,
-			"w": 2101,
-			"h": 662
+			"x": 192,
+			"y": 2171,
+			"w": 2122,
+			"h": 680
 		},
 		"sbuck": {
 			"font": "Spacebit",
 			"color": "white",
 			"alignment": "center",
-			"x": 135,
-			"y": 2864,
-			"w": 360,
-			"h": 360
+			"x": 130,
+			"y": 2862,
+			"w": 366,
+			"h": 366
 		},
 		"heat": {
 			"font": "Spacebit",
 			"color": "white",
 			"alignment": "center",
-			"x": 2005,
-			"y": 2864,
-			"w": 360,
-			"h": 360
+			"x": 2008,
+			"y": 2862,
+			"w": 366,
+			"h": 366
 		}
 	}
 }
