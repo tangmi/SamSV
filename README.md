@@ -1,6 +1,6 @@
 # ssv-cardmaker
 
-this tool will take `.psd` source art files and combine them with a template and text to create full cards.
+this tool will take `.psd` source art files and combine them with a template and text to create coool cards.
 
 ## getting started
 
