@@ -4,13 +4,11 @@ var path = require('path'),
 	fs = require('fs'),
 	async = require('async');
 
-var render = require('./render');
+var render = require('../lib/renderer');
 
 var config = require('../configuration');
 var dirsrc = config.dirs.src;
 var dirout = config.dirs.out;
-
-var templatename = require('../template.json').name;
 
 var logger = require('winston');
 
@@ -21,7 +19,7 @@ module.exports.list = function(req, res) {
 
 	fs.readdir(dirsrc, function(err, files) {
 		async.each(files.filter(function(file) {
-			return file.indexOf('.psd') !== -1 && file.indexOf(templatename) !== 0;
+			return file.indexOf('.psd') !== -1;
 		}), function(item, callback) {
 
 			var cardname = path.basename(item, '.psd');

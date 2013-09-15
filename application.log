@@ -1,0 +1,180 @@
+2013-09-15T20:02:04.195Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:02:04.196Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art.tif to composite...
+2013-09-15T20:02:04.196Z - info: Adding text to composite... (art)
+2013-09-15T20:02:04.196Z - info: Adding text to composite... (test)
+2013-09-15T20:02:04.196Z - info: Adding text to composite... (what i am a test??)
+2013-09-15T20:02:04.196Z - info: Adding text to composite... (1)
+2013-09-15T20:02:04.196Z - info: Adding text to composite... (8)
+2013-09-15T20:02:04.196Z - info: Rendering composite...
+2013-09-15T20:02:04.996Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art.tif
+2013-09-15T20:02:09.691Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:02:09.691Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art2.tif to composite...
+2013-09-15T20:02:09.691Z - info: Adding text to composite... (art2)
+2013-09-15T20:02:09.691Z - info: Adding text to composite... (asdf)
+2013-09-15T20:02:09.691Z - info: Adding text to composite... (i am a test, what does that matter to you?)
+2013-09-15T20:02:09.691Z - info: Adding text to composite... (asdf)
+2013-09-15T20:02:09.691Z - info: Adding text to composite... (asdf)
+2013-09-15T20:02:09.692Z - info: Rendering composite...
+2013-09-15T20:02:10.777Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art2.tif
+2013-09-15T20:02:15.076Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:02:15.076Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art2.tif to composite...
+2013-09-15T20:02:15.076Z - info: Adding text to composite... (art2)
+2013-09-15T20:02:15.076Z - info: Adding text to composite... (asdf)
+2013-09-15T20:02:15.076Z - info: Adding text to composite... (i am a test, what does that matter to you?)
+2013-09-15T20:02:15.076Z - info: Adding text to composite... (asdf)
+2013-09-15T20:02:15.076Z - info: Adding text to composite... (asdf)
+2013-09-15T20:02:15.076Z - info: Rendering composite...
+2013-09-15T20:02:16.267Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art2.tif
+2013-09-15T20:02:24.173Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:02:24.174Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art2.tif to composite...
+2013-09-15T20:02:24.174Z - info: Adding text to composite... (art2)
+2013-09-15T20:02:24.174Z - info: Adding text to composite... (asdf)
+2013-09-15T20:02:24.174Z - info: Adding text to composite... (i am a test, what does that matter to you?)
+2013-09-15T20:02:24.174Z - info: Adding text to composite... (asdf)
+2013-09-15T20:02:24.174Z - info: Adding text to composite... (asdf)
+2013-09-15T20:02:24.174Z - info: Rendering composite...
+2013-09-15T20:02:25.331Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art2.tif
+2013-09-15T20:03:03.508Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:03:03.510Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art2.tif to composite...
+2013-09-15T20:03:03.510Z - info: Adding text to composite... (art2)
+2013-09-15T20:03:03.511Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:03.511Z - info: Adding text to composite... (i am a test, what does that matter to you?)
+2013-09-15T20:03:03.511Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:03.511Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:03.511Z - info: Rendering composite...
+2013-09-15T20:03:04.653Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art2.tif
+2013-09-15T20:03:05.630Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:03:05.631Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art2.tif to composite...
+2013-09-15T20:03:05.632Z - info: Adding text to composite... (art2)
+2013-09-15T20:03:05.632Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:05.632Z - info: Adding text to composite... (i am a test, what does that matter to you?)
+2013-09-15T20:03:05.632Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:05.632Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:05.632Z - info: Rendering composite...
+2013-09-15T20:03:06.949Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art2.tif
+2013-09-15T20:03:08.676Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:03:08.676Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art2.tif to composite...
+2013-09-15T20:03:08.676Z - info: Adding text to composite... (art2)
+2013-09-15T20:03:08.676Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:08.677Z - info: Adding text to composite... (i am a test, what does that matter to you?)
+2013-09-15T20:03:08.677Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:08.677Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:08.677Z - info: Rendering composite...
+2013-09-15T20:03:09.731Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art2.tif
+2013-09-15T20:03:16.948Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:03:16.948Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art2.tif to composite...
+2013-09-15T20:03:16.948Z - info: Adding text to composite... (art2)
+2013-09-15T20:03:16.948Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:16.948Z - info: Adding text to composite... (i am a test, what does that matter to you?)
+2013-09-15T20:03:16.948Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:16.948Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:16.949Z - info: Rendering composite...
+2013-09-15T20:03:18.144Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art2.tif
+2013-09-15T20:03:37.028Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:03:37.029Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art2.tif to composite...
+2013-09-15T20:03:37.029Z - info: Adding text to composite... (art2)
+2013-09-15T20:03:37.029Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:37.029Z - info: Adding text to composite... (i am a test, what does that matter to you?)
+2013-09-15T20:03:37.029Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:37.030Z - info: Adding text to composite... (asdf)
+2013-09-15T20:03:37.030Z - info: Rendering composite...
+2013-09-15T20:03:38.196Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art2.tif
+2013-09-15T20:12:19.177Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:12:19.178Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art2.tif to composite...
+2013-09-15T20:12:19.178Z - info: Adding text to composite... (art2)
+2013-09-15T20:12:19.178Z - info: Adding text to composite... (asdf)
+2013-09-15T20:12:19.178Z - info: Adding text to composite... (i am a test, what does that matter to you?)
+2013-09-15T20:12:19.178Z - info: Adding text to composite... (asdf)
+2013-09-15T20:12:19.178Z - info: Adding text to composite... (asdf)
+2013-09-15T20:12:19.179Z - info: Rendering composite...
+2013-09-15T20:12:20.435Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art2.tif
+2013-09-15T20:12:37.822Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:12:37.822Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art2.tif to composite...
+2013-09-15T20:12:37.822Z - info: Adding text to composite... (art2)
+2013-09-15T20:12:37.822Z - info: Adding text to composite... (asdf)
+2013-09-15T20:12:37.823Z - info: Adding text to composite... (i am a test, what does that matter to you?)
+2013-09-15T20:12:37.823Z - info: Adding text to composite... (asdf)
+2013-09-15T20:12:37.823Z - info: Adding text to composite... (asdf)
+2013-09-15T20:12:37.823Z - info: Rendering composite...
+2013-09-15T20:12:39.122Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art2.tif
+2013-09-15T20:12:40.219Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:12:40.219Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art2.tif to composite...
+2013-09-15T20:12:40.219Z - info: Adding text to composite... (art2)
+2013-09-15T20:12:40.219Z - info: Adding text to composite... (asdf)
+2013-09-15T20:12:40.219Z - info: Adding text to composite... (i am a test, what does that matter to you?)
+2013-09-15T20:12:40.219Z - info: Adding text to composite... (asdf)
+2013-09-15T20:12:40.219Z - info: Adding text to composite... (asdf)
+2013-09-15T20:12:40.219Z - info: Rendering composite...
+2013-09-15T20:12:41.633Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art2.tif
+2013-09-15T20:13:13.329Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:13:13.330Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art2.tif to composite...
+2013-09-15T20:13:13.331Z - info: Adding text to composite... (art2)
+2013-09-15T20:13:13.331Z - info: Adding text to composite... (asdf)
+2013-09-15T20:13:13.331Z - info: Adding text to composite... (i am a test, what does that matter to you?)
+2013-09-15T20:13:13.331Z - info: Adding text to composite... (asdf)
+2013-09-15T20:13:13.331Z - info: Adding text to composite... (asdf)
+2013-09-15T20:13:13.331Z - info: Rendering composite...
+2013-09-15T20:13:14.506Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art2.tif
+2013-09-15T20:13:15.775Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:13:15.775Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art2.tif to composite...
+2013-09-15T20:13:15.775Z - info: Adding text to composite... (art2)
+2013-09-15T20:13:15.775Z - info: Adding text to composite... (asdf)
+2013-09-15T20:13:15.775Z - info: Adding text to composite... (i am a test, what does that matter to you?)
+2013-09-15T20:13:15.775Z - info: Adding text to composite... (asdf)
+2013-09-15T20:13:15.776Z - info: Adding text to composite... (asdf)
+2013-09-15T20:13:15.776Z - info: Rendering composite...
+2013-09-15T20:13:16.763Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art2.tif
+2013-09-15T20:13:29.527Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:13:29.527Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art.tif to composite...
+2013-09-15T20:13:29.527Z - info: Adding text to composite... (art)
+2013-09-15T20:13:29.527Z - info: Adding text to composite... (test)
+2013-09-15T20:13:29.527Z - info: Adding text to composite... (what i am a test??)
+2013-09-15T20:13:29.527Z - info: Adding text to composite... (1)
+2013-09-15T20:13:29.527Z - info: Adding text to composite... (8)
+2013-09-15T20:13:29.527Z - info: Rendering composite...
+2013-09-15T20:13:30.162Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art.tif
+2013-09-15T20:13:47.200Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:13:47.201Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art.tif to composite...
+2013-09-15T20:13:47.201Z - info: Adding text to composite... (art)
+2013-09-15T20:13:47.201Z - info: Adding text to composite... (test)
+2013-09-15T20:13:47.201Z - info: Adding text to composite... (what i am a test??)
+2013-09-15T20:13:47.201Z - info: Adding text to composite... (1)
+2013-09-15T20:13:47.201Z - info: Adding text to composite... (8)
+2013-09-15T20:13:47.201Z - info: Rendering composite...
+2013-09-15T20:13:47.861Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art.tif
+2013-09-15T20:13:49.592Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:13:49.592Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art.tif to composite...
+2013-09-15T20:13:49.592Z - info: Adding text to composite... (art)
+2013-09-15T20:13:49.592Z - info: Adding text to composite... (test)
+2013-09-15T20:13:49.592Z - info: Adding text to composite... (what i am a test??)
+2013-09-15T20:13:49.592Z - info: Adding text to composite... (1)
+2013-09-15T20:13:49.593Z - info: Adding text to composite... (8)
+2013-09-15T20:13:49.593Z - info: Rendering composite...
+2013-09-15T20:13:50.284Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art.tif
+2013-09-15T20:14:17.743Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:14:17.744Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art.tif to composite...
+2013-09-15T20:14:17.744Z - info: Adding text to composite... (art)
+2013-09-15T20:14:17.744Z - info: Adding text to composite... (test)
+2013-09-15T20:14:17.744Z - info: Adding text to composite... (what am i?? a test??)
+2013-09-15T20:14:17.744Z - info: Adding text to composite... (1)
+2013-09-15T20:14:17.744Z - info: Adding text to composite... (8)
+2013-09-15T20:14:17.744Z - info: Rendering composite...
+2013-09-15T20:14:18.488Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art.tif
+2013-09-15T20:14:20.417Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:14:20.417Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\art.tif to composite...
+2013-09-15T20:14:20.417Z - info: Adding text to composite... (art)
+2013-09-15T20:14:20.417Z - info: Adding text to composite... (test)
+2013-09-15T20:14:20.418Z - info: Adding text to composite... (what am i?? a test?!?)
+2013-09-15T20:14:20.418Z - info: Adding text to composite... (1)
+2013-09-15T20:14:20.418Z - info: Adding text to composite... (8)
+2013-09-15T20:14:20.418Z - info: Rendering composite...
+2013-09-15T20:14:21.213Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\art.tif
+2013-09-15T20:15:24.538Z - info: Building a composite from 0=c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\template.tif
+2013-09-15T20:15:24.538Z - info: Adding c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\tmp\sam.tif to composite...
+2013-09-15T20:15:24.538Z - info: Adding text to composite... (Sam Warner)
+2013-09-15T20:15:24.538Z - info: Adding text to composite... (Human)
+2013-09-15T20:15:24.539Z - info: Adding text to composite... (Though he's just a human, he's generally a pretty good sport about it.)
+2013-09-15T20:15:24.539Z - info: Adding text to composite... (5)
+2013-09-15T20:15:24.539Z - info: Adding text to composite... (5)
+2013-09-15T20:15:24.539Z - info: Rendering composite...
+2013-09-15T20:15:26.374Z - info: Rendered composite to: c:\Users\michael\Documents\GitHub\ssv-cardmaker\img\out\sam.tif
