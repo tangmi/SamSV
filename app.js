@@ -3,7 +3,7 @@
  */
 
 var express = require('express'),
-	cards = require('./routes/cards'),
+	api = require('./web/api'),
 	http = require('http'),
 	path = require('path');
 
@@ -23,10 +23,10 @@ app.configure('development', function() {
 	app.use(express.errorHandler());
 });
 
-app.get('/cards', cards.list);
-app.get('/card/:name', cards.single);
-app.post('/card/:name', cards.update);
-app.get('/card/:name/render', cards.render);
+app.get('/cards', api.list);
+app.get('/card/:name', api.single);
+app.post('/card/:name', api.update);
+app.get('/card/:name/render', api.render);
 
 http.createServer(app).listen(app.get('port'), function() {
 	console.log("Express server listening on port " + app.get('port'));

@@ -5,5 +5,7 @@ img/tmp/
 img/out/
 img/src/*.psd
 img/src/*.json
+img/template/*.psd
+img/template/*.json
 
 app/img/thumbs/

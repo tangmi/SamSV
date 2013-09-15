@@ -4,6 +4,8 @@
 		"src": "img/src",
 		"tmp": "img/tmp",
 		"out": "img/out",
-		"thumbs": "app/img/thumbs"
-	}
+		"thumbs": "app/img/thumbs",
+		"template": "img/template"
+	},
+	"template": "template"
 }
